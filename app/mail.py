@@ -5,7 +5,8 @@ import sendgrid
 from sendgrid.helpers.mail import *
 
 
-from app.db import get_db
+from db import get_db
+
 bp = Blueprint('mail',__name__,url_prefix="/")
 
 @bp.route('/', methods=['GET'])
